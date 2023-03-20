@@ -1,0 +1,29 @@
+<!-- ///////////////// first section////////////////////////// -->
+<div class="container">
+    <div class="hedder">
+        <h3>Technical Porject Mangement</h3>
+        <button type="submit" class="btn btn-primary">Submit Task</button>
+    </div>
+<!-- ///////////////////////second section////////////////////////// -->
+    <div class="explore-the-world">
+        <h4>Explore the world mangement</h4>
+        <p>As a project manager, you play an important role in leading a project through initiation, planing, execution, monitoring, controlling
+            and completion.How ? Do you want to manage each and every step of your life?
+        </p>
+    </div>
+</div>
+<!-- ////////////////////// left menue//////////////////////////// -->
+<nav class="menu" [class.show]="isMenuVisible">
+    <div class="bg-black menu-div">
+        <h5>Journey Board</h5>
+        <button class="menu-button" (click)="toggleMenu()"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <ul>
+      <li> <h6>explore the world of Mangement </h6></li>
+      <li>Technical Porject Management/li>
+      <li>Threadbuild</li>
+      <li>Structure your pointers</li>
+      <li>4SA Method</li>
+    </ul>
+  </nav>
+ 

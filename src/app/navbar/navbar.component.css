@@ -1,0 +1,63 @@
+.navbar{
+  background-color: #ababab;
+}
+.container-fluid{
+    width: 80%;
+}
+.leftSide{
+    display: flex;
+}
+.leftSide img{
+    width: 15%;
+    padding-right: 5px;
+}
+.rightSide{
+  display:flex;
+}
+.rightSide .navbutton{
+  margin-right: 30px;
+}
+.rightSide .navbutton button{
+  border-radius: 50%;
+}
+.menu {
+    position: relative;
+  }
+  .menu-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+  }
+  .menu-items li {
+    display: block;
+  }
+  .menu-items li a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+  }
+  .menu-items li a:hover {
+    background: #f9f9f9;
+  }
+  
+  /* Show menu items when toggle button is clicked */
+  .menu-toggle:focus + .menu-items,
+  .menu-items:hover {
+    display: block;
+  }
+
+  /* //////////////////////////////// Main Page //////////////////////////////// */

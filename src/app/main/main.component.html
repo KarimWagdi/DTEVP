@@ -1,0 +1,137 @@
+    <!-- /////////////////////////////// first card /////////////////////////////// -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <div class="card-header text-bg-dark title description">
+                   <p> Featured </p>
+                    <button class="btn btn-light"><i class="fa-solid fa-exclamation"></i></button>
+                </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Description:</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- /////////////////////////////// second card /////////////////////////////// -->
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <div class="card-header text-bg-dark title description">
+                   <p> Featured </p>
+                    <button class="btn btn-light"><i class="fa-solid fa-exclamation"></i></button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Description:</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <label class="dropSection btn" data-bs-toggle="collapse" href="#collapseCard"  aria-expanded="false" aria-controls="collapseExample">
+                          <samp><i class="fa-sharp fa-solid fa-arrow-up"></i></samp> Thread A
+                        </label>
+                      <div class="collapse" id="collapseCard">
+                        
+                            <div>
+                                <div class="text-contaner">
+                                    <div class="textarea col-sm-5 mb-3 mb-sm-0">
+                                        <h5>sub-thread 1</h5>
+                                        <textarea cols="23" rows="5" placeholder=" Enter Text Here"></textarea>
+                                    </div>
+                                    <div class="textarea col-sm-5 mb-3 mb-sm-0">
+                                        <h5>thread 1</h5>
+                                        <textarea cols="23" rows="5" placeholder=" Enter Text Here"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icons">
+                                <span><i class="fa-solid fa-lightbulb"></i></span>
+                                <span><i class="fa-sharp fa-solid fa-warehouse"></i></span>
+                                <span><i class="fa-sharp fa-solid fa-warehouse"></i></span>
+                                <span><i class="fa-solid fa-spa"></i></span>
+                                <div id="btn">
+                                <button type="button" class="btn btn-light">select <i class="fa-sharp fa-solid fa-arrow-down"></i></button>
+                                <button type="button" class="btn btn-light">select <i class="fa-sharp fa-solid fa-arrow-down"></i></button>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    <i class="fa-solid fa-plus"></i> sub thread
+                                </button>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="textarea col-sm-12 mb-3 mb-sm-0">
+                                        <h5>Summary of thread A </h5>
+                                        <textarea  cols="60" rows="5" placeholder=" Enter Text Here"></textarea>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /////////////////////////////// third card ////////////////////////////// -->
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <div class="card-header text-bg-dark title description">
+                   <p> Featured </p>
+                    <button class="btn btn-light"><i class="fa-solid fa-exclamation"></i></button>
+                </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Description:</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Title</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /////////////////////////////// forth card /////////////////////////////// -->
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <div class="card-header text-bg-dark title description">
+                   <p> Featured </p>
+                    <button class="btn btn-light"><i class="fa-solid fa-exclamation"></i></button>
+                </div>
+                    <div class="card-body">
+                    <h5 class="card-title"> Description:</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <label class="dropSection btn" data-bs-toggle="collapse" href="#collapseExamplez"  aria-expanded="false" aria-controls="collapseExample">
+                        <samp><i class="fa-sharp fa-solid fa-arrow-up"></i></samp> Description
+                      </label>
+                    <div class="collapse" id="collapseExamplez">
+                          <!-- <div class="read-more-container">
+                            <app-show-more [text] as HTMLInputElement ="sadfassfdasfasfasdf" 
+                            [wordLimit]="8"></app-show-more>
+                          </div> -->
+                          <div>
+                            <p *ngIf="showFullContent">{{ fullContent }}</p>
+                            <p *ngIf="!showFullContent">{{ partialContent }}</p>
+                            <a (click)="toggleShowFullContent()">
+                              {{ showFullContent ? 'See less' : 'See more' }}
+                            </a>
+                          </div>
+                    </div>
+                    <label class="dropSection btn " data-bs-toggle="collapse" href="#collapseExample"  aria-expanded="false" aria-controls="collapseExample">
+                        <samp><i class="fa-sharp fa-solid fa-arrow-up"></i></samp> Thread A
+                      </label>
+                    <div class="collapse" id="collapseExample">
+                        <div>
+                            <p *ngIf="showFulltext">{{ fulltext }}</p>
+                            <p *ngIf="!showFulltext">{{ partialtext }}</p>
+                            <a (click)="toggleShowFulltext()">
+                              {{ showFulltext ? 'See less' : 'See more' }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
